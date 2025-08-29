@@ -1,28 +1,30 @@
-# ThreatSentinel – Modern Threat Detection with Custom Wazuh Rules
+# WazuhThreatKit – A toolkit for detection engineers to implement and test rules
 
 
-**ThreatSentinel** is a SOC-focused project that demonstrates **custom Wazuh rules for detecting modern cyber threats**. It is designed for cybersecurity enthusiasts and SOC analysts who want to **practice threat detection, log analysis, and alert simulation** without needing a full Wazuh deployment.
+**WazuhThreatKit** is a SOC-focused project that provides **custom Wazuh rules for detecting modern cyber threats**. It is designed for cybersecurity enthusiasts and **detection engineers** who want to **practice writing, testing, and implementing detection rules** in Wazuh, without needing a full Wazuh deployment.
 
 ---
 
 ## 🚀 Project Goals
-- Develop **custom detection rules** for modern attack techniques:
+- Develop **custom detection rules** for modern attack techniques with MITRE ATT&CK mapping:
   - Ransomware activity
   - Cloud & container threats (AWS CLI, Docker misuse)    
   - Living-off-the-land attacks (PowerShell, WMI)  
   - Lateral movement (SMB, RDP)  
-- Simulate **log monitoring and alerting** using Python  
-- Provide **structured, reusable rule sets** for SOC learning and demonstration  
+- Test rules against **simulated logs** using Python  
+- Generate **JSON alert files** for demonstration and validation  
+- Provide **structured, reusable rule sets** to help detection engineers implement them in Wazuh  
 
 
 ---
 
 ## 🛠️ Features
-- **Modular rule sets**: Each threat type has its own folder with multiple rules  
-- **Python engine**: Applies Wazuh XML rules to sample logs for testing  
-- **Sample logs**: Preloaded with Linux, Windows, and cloud activity  
-- **MITRE ATT&CK mapping**: Each rule references the corresponding tactic  
-- **Alert output**: Terminal, JSON, or CSV  
+- **Modular Wazuh rule sets**: Each threat type has its own folder with multiple ready-to-implement rules  
+- **Python testing engine**: Applies Wazuh XML rules to sample logs to validate detection  
+- **Comprehensive sample logs**: Simulated Linux, Windows, and cloud activity covering multiple attack techniques  
+- **MITRE ATT&CK mapping**: Each rule references the corresponding tactic and technique for SOC relevance  
+- **Alert generation**: Produces alerts in console output and as JSON files for testing and demonstration  
+- **Detection engineer-friendly**: Rules and logs are structured to help engineers implement them directly in Wazuh  
 
 
 ---
