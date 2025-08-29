@@ -1,0 +1,11 @@
+<group name="cloud_threats">
+  <rule id="TS_C_014" level="8">
+    <decoded_as>json</decoded_as>
+    <field name="operationName">CreateContainer|CreateBlob</field>
+    <description>Public storage container or blob creation detected</description>
+    <mitre>
+      <id>T1531</id>
+      <tactic>Discovery / Resource Impact</tactic>
+    </mitre>
+  </rule>
+</group>

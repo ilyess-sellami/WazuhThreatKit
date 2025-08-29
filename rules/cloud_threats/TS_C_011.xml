@@ -1,0 +1,12 @@
+<group name="cloud_threats">
+  <rule id="TS_C_011" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="operationName">DeleteStorageAccount</field>
+    <description>Destructive Azure Storage account deletion detected</description>
+    <mitre>
+      <id>T1485</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>
+

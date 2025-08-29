@@ -1,0 +1,11 @@
+<group name="cloud_threats">
+  <rule id="TS_C_013" level="9">
+    <decoded_as>json</decoded_as>
+    <field name="operationName">Add-AzureADDirectoryRoleMember</field>
+    <description>Suspicious role assignment – possible privilege escalation</description>
+    <mitre>
+      <id>T1078</id>
+      <tactic>Persistence / Privilege Escalation</tactic>
+    </mitre>
+  </rule>
+</group>

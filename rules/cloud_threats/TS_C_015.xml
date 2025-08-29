@@ -1,0 +1,13 @@
+<group name="cloud_threats">
+  <rule id="TS_C_015" level="9">
+    <decoded_as>json</decoded_as>
+    <field name="operationName">SignInFailed</field>
+    <description>Multiple failed Azure AD login attempts – potential brute force</description>
+    <mitre>
+      <id>T1110</id>
+      <tactic>Credential Access</tactic>
+    </mitre>
+    <frequency>3</frequency>
+    <timeframe>300</timeframe>
+  </rule>
+</group>
