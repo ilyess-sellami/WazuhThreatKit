@@ -1,0 +1,12 @@
+<group name="lateral_movement">
+  <rule id="TS_M_005" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="DestinationPort">445</field>
+    <field name="SourceIP">.*(?!192\.168).* </field>
+    <description>Suspicious SMB connection from non-local IP – potential lateral movement</description>
+    <mitre>
+      <id>T1021.002</id>
+      <tactic>Lateral Movement</tactic>
+    </mitre>
+  </rule>
+</group>

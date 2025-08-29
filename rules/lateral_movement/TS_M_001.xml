@@ -1,0 +1,12 @@
+<group name="lateral_movement">
+  <rule id="TS_M_001" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="SourceIP">.*(?!192\.168).* </field>
+    <field name="EventID">4624</field>
+    <description>Suspicious RDP login from non-whitelisted IP</description>
+    <mitre>
+      <id>T1076</id>
+      <tactic>Lateral Movement</tactic>
+    </mitre>
+  </rule>
+</group>

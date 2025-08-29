@@ -1,0 +1,11 @@
+<group name="powershell_lolbas">
+  <rule id="TS_L_004" level="8">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*Get-ItemProperty.*HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run.*</field>
+    <description>Possible LOL attack: PowerShell accessing startup registry keys</description>
+    <mitre>
+      <id>T1547.001</id>
+      <tactic>Persistence</tactic>
+    </mitre>
+  </rule>
+</group>

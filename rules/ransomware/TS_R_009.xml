@@ -1,0 +1,11 @@
+<group name="ransomware">
+  <rule id="TS_R_009" level="8">
+    <decoded_as>json</decoded_as>
+    <field name="dest_ip">.*</field>
+    <description>Possible ransomware activity: unusual outbound connections detected (data exfiltration)</description>
+    <mitre>
+      <id>T1041</id>
+      <tactic>Exfiltration</tactic>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<group name="cloud_threats">
+  <rule id="TS_C_010" level="8">
+    <decoded_as>json</decoded_as>
+    <field name="command">.*(aws|az|gcloud) (ec2|vm|compute|s3|storage) describe.*</field>
+    <description>Suspicious cloud activity: enumeration of cloud resources</description>
+    <mitre>
+      <id>T1087</id>
+      <tactic>Discovery</tactic>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,32 @@
+[
+  {
+    "user": "admin",
+    "source_ip": "198.51.100.23",
+    "command": "aws s3 rm s3://company-backup --recursive",
+    "time": "2025-08-29T13:22:10Z"
+  },
+  {
+    "user": "admin",
+    "source_ip": "198.51.100.23",
+    "command": "aws ec2 terminate-instances --instance-ids i-1234567890abcdef",
+    "time": "2025-08-29T13:23:15Z"
+  },
+  {
+    "user": "admin",
+    "source_ip": "203.0.113.10",
+    "command": "az vm delete --name MaliciousVM --resource-group RG1",
+    "time": "2025-08-29T13:25:20Z"
+  },
+  {
+    "user": "dev",
+    "source_ip": "198.51.100.40",
+    "command": "docker run --privileged -d alpine sh",
+    "time": "2025-08-29T13:26:05Z"
+  },
+  {
+    "user": "admin",
+    "source_ip": "203.0.113.10",
+    "command": "gcloud storage rm -r gs://sensitive-bucket",
+    "time": "2025-08-29T13:28:30Z"
+  }
+]

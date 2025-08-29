@@ -1,0 +1,5 @@
+2025-08-29 15:05:23 INFO EventID: 4624 RDP login from SourceIP=203.0.113.10
+2025-08-29 15:06:00 INFO CommandLine: psexec \\10.0.0.5 -u admin -p Password123 cmd.exe
+2025-08-29 15:06:15 INFO CommandLine: wmic /node:10.0.0.6 process call create "cmd.exe /c dir"
+2025-08-29 15:06:25 INFO CommandLine: net view \\10.0.0.0
+2025-08-29 15:06:40 INFO SMB connection to 10.0.0.8:445 from 198.51.100.23

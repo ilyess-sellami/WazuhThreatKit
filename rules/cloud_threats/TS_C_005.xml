@@ -1,0 +1,11 @@
+<group name="cloud_threats">
+  <rule id="TS_C_005" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="command">.*docker run .* --privileged.*</field>
+    <description>Suspicious Docker activity: privileged container execution</description>
+    <mitre>
+      <id>T1525</id>
+      <tactic>Defense Evasion</tactic>
+    </mitre>
+  </rule>
+</group>

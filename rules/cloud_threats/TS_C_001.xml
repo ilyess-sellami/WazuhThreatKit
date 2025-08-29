@@ -1,0 +1,11 @@
+<group name="cloud_threats">
+  <rule id="TS_C_001" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="command">.*aws s3 rm .* --recursive.*</field>
+    <description>Suspicious AWS command: recursive deletion of S3 bucket</description>
+    <mitre>
+      <id>T1531</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>

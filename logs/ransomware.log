@@ -1,0 +1,7 @@
+2025-08-29 12:01:05 INFO File created: C:\Users\John\Documents\secret_file.encrypted
+2025-08-29 12:01:07 INFO Shadow copy deleted: VolumeShadowCopy1
+2025-08-29 12:01:08 INFO Mass file deletion: C:\Users\John\Desktop\*.docx
+2025-08-29 12:01:10 INFO Backup deleted: C:\Backup\important_data.bak
+2025-08-29 12:01:12 INFO Suspicious ransomware binary executed: C:\Temp\Ryuk.exe
+2025-08-29 12:01:15 INFO Rapid file creation in sensitive folder: C:\Users\John\Documents\Project\file1.locked
+2025-08-29 12:01:18 INFO Suspicious outbound connection: 198.51.100.50:443

@@ -1,0 +1,11 @@
+<group name="ransomware">
+  <rule id="TS_R_007" level="9">
+    <decoded_as>json</decoded_as>
+    <field name="command">.*wannacry.*|.*ryuk.*|.*conti.*</field>
+    <description>Possible ransomware activity: known ransomware binary executed</description>
+    <mitre>
+      <id>T1486</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>

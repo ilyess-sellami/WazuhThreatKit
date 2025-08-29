@@ -1,0 +1,11 @@
+<group name="cloud_threats">
+  <rule id="TS_C_003" level="9">
+    <decoded_as>json</decoded_as>
+    <field name="command">.*aws iam put-user-policy.*</field>
+    <description>Suspicious AWS command: IAM policy modification</description>
+    <mitre>
+      <id>T1078</id>
+      <tactic>Persistence</tactic>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<group name="powershell_lolbas">
+  <rule id="TS_L_002" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*Invoke-WebRequest.*|.*wget.*</field>
+    <description>Possible LOL attack: PowerShell downloading remote scripts</description>
+    <mitre>
+      <id>T1105</id>
+      <tactic>Command and Control</tactic>
+    </mitre>
+  </rule>
+</group>

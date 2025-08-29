@@ -1,0 +1,11 @@
+<group name="ransomware">
+  <rule id="TS_R_008" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="filepath">.*(Documents|Desktop|Pictures).*\.encrypted$</field>
+    <description>Possible ransomware activity: multiple encrypted files created in user folders</description>
+    <mitre>
+      <id>T1486</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>

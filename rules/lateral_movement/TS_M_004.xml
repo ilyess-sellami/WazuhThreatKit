@@ -1,0 +1,11 @@
+<group name="lateral_movement">
+  <rule id="TS_M_004" level="8">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*net view.*|.*net group.*</field>
+    <description>Suspicious network enumeration detected via net commands</description>
+    <mitre>
+      <id>T1046</id>
+      <tactic>Discovery</tactic>
+    </mitre>
+  </rule>
+</group>

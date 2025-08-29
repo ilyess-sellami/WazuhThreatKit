@@ -1,0 +1,11 @@
+<group name="powershell_lolbas">
+  <rule id="TS_L_005" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*Temp\\.*\.ps1.*</field>
+    <description>Possible LOL attack: PowerShell executing scripts from temporary folder</description>
+    <mitre>
+      <id>T1059.001</id>
+      <tactic>Execution</tactic>
+    </mitre>
+  </rule>
+</group>

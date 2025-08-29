@@ -1,0 +1,11 @@
+<group name="ransomware">
+  <rule id="TS_R_002" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="filename">.*\.encrypted$</field>
+    <description>Possible ransomware activity: new encrypted file created</description>
+    <mitre>
+      <id>T1486</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>

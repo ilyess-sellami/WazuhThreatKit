@@ -1,0 +1,12 @@
+<group name="ransomware">
+  <rule id="TS_R_005" level="10">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="NewProcessName">.*powershell.exe.*</field>
+    <field name="CommandLine">.*Encrypt-File.*</field>
+    <description>Possible ransomware activity: PowerShell file encryption detected</description>
+    <mitre>
+      <id>T1486</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<group name="cloud_threats">
+  <rule id="TS_C_004" level="9">
+    <decoded_as>json</decoded_as>
+    <field name="command">.*aws s3api put-bucket-acl.*PublicRead.*</field>
+    <description>Suspicious AWS command: public S3 bucket creation</description>
+    <mitre>
+      <id>T1531</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>

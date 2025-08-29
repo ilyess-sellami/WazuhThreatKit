@@ -1,0 +1,12 @@
+<group name="cloud_threats">
+  <rule id="TS_C_009" level="8">
+    <decoded_as>json</decoded_as>
+    <field name="command">.*(aws|az|gcloud) login.*</field>
+    <field name="source_ip">.*(?!192\.168).* </field>
+    <description>Suspicious cloud login from unexpected IP/location</description>
+    <mitre>
+      <id>T1078</id>
+      <tactic>Initial Access</tactic>
+    </mitre>
+  </rule>
+</group>

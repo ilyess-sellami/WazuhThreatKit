@@ -1,0 +1,11 @@
+<group name="lateral_movement">
+  <rule id="TS_M_003" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*wmic /node:.* process call create.*</field>
+    <description>WMI used to create a process on a remote machine</description>
+    <mitre>
+      <id>T1047</id>
+      <tactic>Lateral Movement</tactic>
+    </mitre>
+  </rule>
+</group>

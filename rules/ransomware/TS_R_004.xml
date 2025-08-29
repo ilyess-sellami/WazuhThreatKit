@@ -1,0 +1,11 @@
+<group name="ransomware">
+  <rule id="TS_R_004" level="10">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="command">.*vssadmin delete shadows.*</field>
+    <description>Possible ransomware activity: shadow copies deletion detected</description>
+    <mitre>
+      <id>T1490</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>

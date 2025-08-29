@@ -1,0 +1,12 @@
+<group name="cloud_threats">
+  <rule id="TS_C_006" level="9">
+    <decoded_as>json</decoded_as>
+    <field name="source_ip">.*(?!192\.168).* </field>
+    <field name="command">.*aws .*</field>
+    <description>Suspicious AWS CLI usage from non-whitelisted IP</description>
+    <mitre>
+      <id>T1078</id>
+      <tactic>Initial Access</tactic>
+    </mitre>
+  </rule>
+</group>

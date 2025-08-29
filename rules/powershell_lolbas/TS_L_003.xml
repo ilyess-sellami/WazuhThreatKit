@@ -1,0 +1,11 @@
+<group name="powershell_lolbas">
+  <rule id="TS_L_003" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*wmic process call create.*</field>
+    <description>Possible LOL attack: WMI used to create a process remotely</description>
+    <mitre>
+      <id>T1047</id>
+      <tactic>Lateral Movement</tactic>
+    </mitre>
+  </rule>
+</group>

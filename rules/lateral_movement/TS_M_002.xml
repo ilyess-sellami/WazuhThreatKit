@@ -1,0 +1,11 @@
+<group name="lateral_movement">
+  <rule id="TS_M_002" level="10">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*psexec.*</field>
+    <description>PsExec tool execution detected – potential lateral movement</description>
+    <mitre>
+      <id>T1021.002</id>
+      <tactic>Lateral Movement</tactic>
+    </mitre>
+  </rule>
+</group>

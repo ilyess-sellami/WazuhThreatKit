@@ -1,0 +1,11 @@
+<group name="cloud_threats">
+  <rule id="TS_C_008" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="command">.*az vm delete.*</field>
+    <description>Suspicious Azure activity: VM deletion detected</description>
+    <mitre>
+      <id>T1531</id>
+      <tactic>Impact</tactic>
+    </mitre>
+  </rule>
+</group>
