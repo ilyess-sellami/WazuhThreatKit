@@ -1,4 +1,6 @@
-# WazuhThreatKit – A toolkit for detection engineers to implement and test rules
+![Python](https://img.shields.io/badge/python-3.8+-blue)
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![Wazuh](https://img.shields.io/badge/Wazuh-Rules-orange)
 
 
 **WazuhThreatKit** is a SOC-focused project that provides **custom Wazuh rules for detecting modern cyber threats**. It is designed for cybersecurity enthusiasts and **detection engineers** who want to **practice writing, testing, and implementing detection rules** in Wazuh, without needing a full Wazuh deployment.
@@ -18,7 +20,7 @@
 
 ---
 
-## 🛠️ Features
+## 📌 Features
 - **Modular Wazuh rule sets**: Each threat type has its own folder with multiple ready-to-implement rules  
 - **Python testing engine**: Applies Wazuh XML rules to sample logs to validate detection  
 - **Comprehensive sample logs**: Simulated Linux, Windows, and cloud activity covering multiple attack techniques  
@@ -29,6 +31,29 @@
 
 ---
 
+## 🛠 Requirements
+- Python 3.8+
+- pip (latest version recommended)
+
+---
+
+
+## 🧪 Clone the Project and Start Scan
+
+Follow these steps to get started with **WazuhThreatKit**:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/ilyess-sellami/WazuhThreatKit.git
+cd WazuhThreatKit
+```
+
+### 2. Run the Scan Script
+```bash
+python run_alerts.py
+```
+
+---
 
 ## 📜 Rules Section
 
@@ -93,3 +118,23 @@ The **Logs module** contains **comprehensive sample logs** for each of the four 
 - **Cloud Threats log**: Simulates destructive cloud commands across AWS, Azure, GCP, and privileged Docker container execution.
 - **Living-Off-the-Land log**: Covers encoded PowerShell commands, remote script downloads, WMI process creation, registry modification, and temp folder script execution.
 - **Lateral Movement log**: Includes suspicious RDP logins, PsExec execution, WMI remote process creation, network enumeration, and unusual SMB connections.
+
+
+---
+
+
+## 🐍 Python Scan Module
+
+This project includes a simple Python engine that helps **Detection Engineers** test and validate Wazuh rules in a lightweight environment.
+
+The module performs the following tasks:
+- 📖 Reads Wazuh XML rules from the `rules/` folder  
+- 📜 Reads sample logs from the `logs/` folder  
+- ⚡ Scans logs against the rules to check for matches  
+- 🛠️ Generates JSON alerts in the `alerts/` folder  
+
+### 🎯 Objective  
+The main objective of this module is to **simulate and test Wazuh rules** outside of a full Wazuh deployment, making it easier for engineers to:
+- Verify if rules are triggered correctly  
+- Debug and fine-tune detection logic  
+- Quickly iterate on rule changes before production deployment  
