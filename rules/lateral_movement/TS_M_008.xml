@@ -1,0 +1,11 @@
+<group name="lateral_movement">
+  <rule id="TS_M_008" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*winrm.*</field>
+    <description>Windows Remote Management (WinRM) session detected – lateral movement attempt</description>
+    <mitre>
+      <id>T1021.006</id>
+      <tactic>Lateral Movement</tactic>
+    </mitre>
+  </rule>
+</group>

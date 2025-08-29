@@ -1,0 +1,11 @@
+<group name="lateral_movement">
+  <rule id="TS_M_007" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*mstsc.* /v:.*</field>
+    <description>Suspicious RDP connection initiated via mstsc command</description>
+    <mitre>
+      <id>T1076</id>
+      <tactic>Lateral Movement</tactic>
+    </mitre>
+  </rule>
+</group>

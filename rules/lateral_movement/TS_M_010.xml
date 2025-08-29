@@ -1,0 +1,11 @@
+<group name="lateral_movement">
+  <rule id="TS_M_010" level="9">
+    <decoded_as>windows_eventchannel</decoded_as>
+    <field name="CommandLine">.*at \\.* /interactive.*</field>
+    <description>Scheduled task created on remote host – lateral movement activity</description>
+    <mitre>
+      <id>T1053.005</id>
+      <tactic>Lateral Movement</tactic>
+    </mitre>
+  </rule>
+</group>
