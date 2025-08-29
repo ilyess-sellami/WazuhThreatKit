@@ -164,8 +164,9 @@ sudo nano /var/ossec/etc/ossec.conf
 ```
 
 1. sure the <rules> section includes your custom folder:
-
+```xml
 <include>/var/ossec/etc/rules/local_rules/*.xml</include>
+```
 
 ---
 
