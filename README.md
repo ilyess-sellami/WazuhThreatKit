@@ -142,6 +142,33 @@ The main objective of this module is to **simulate and test Wazuh rules** outsid
 
 ---
 
+
+## ⚙️ Integrating WazuhThreatKit Rules into Your Wazuh
+
+You can easily add the custom rules from **WazuhThreatKit** into your Wazuh environment by following these steps:
+
+### 1️⃣ Organize Your Custom Rules
+1. Create a folder for your custom rules (if not already existing):
+
+```bash
+sudo mkdir -p /var/ossec/etc/rules/local_rules
+```
+
+2. Copy the XML rule files from this project into the folder
+
+### 2️⃣ Include the Custom Rules in Wazuh
+1. Open the Wazuh configuration file:
+
+```bash
+sudo nano /var/ossec/etc/ossec.conf
+```
+
+1. sure the <rules> section includes your custom folder:
+
+<include>/var/ossec/etc/rules/local_rules/*.xml</include>
+
+---
+
 ## 🔮 Future Work
 - Add decoders for more advanced log parsing  
 - Expand rule modules (Phishing, Insider Threats, Supply Chain Attacks)  
