@@ -163,7 +163,7 @@ sudo mkdir -p /var/ossec/etc/rules/local_rules
 sudo nano /var/ossec/etc/ossec.conf
 ```
 
-1. sure the `<rules>` section includes your custom folder:
+1. Ensure the `<rules>` section includes your custom folder:
 ```xml
 <include>/var/ossec/etc/rules/local_rules/*.xml</include>
 ```
