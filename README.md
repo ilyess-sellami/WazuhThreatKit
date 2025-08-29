@@ -138,3 +138,24 @@ The main objective of this module is to **simulate and test Wazuh rules** outsid
 - Verify if rules are triggered correctly  
 - Debug and fine-tune detection logic  
 - Quickly iterate on rule changes before production deployment  
+
+
+---
+
+## 🔮 Future Work
+- Add decoders for more advanced log parsing  
+- Expand rule modules (Phishing, Insider Threats, Supply Chain Attacks)  
+- Add CI/CD testing pipeline for rules validation  
+- Integrate with Wazuh API for live testing  
+
+
+---
+
+
+## 🤝 Contributing
+Contributions are welcome!  
+To add new rules:
+1. Fork the repo  
+2. Add your rule in `rules/<module_name>/`  
+3. Add corresponding test logs in `logs/`  
+4. Submit a pull request 🚀  
