@@ -73,7 +73,7 @@ The **Ransomware module** contains **10 custom rules** designed to detect common
 
 
 ### 2️⃣ Cloud Threat Rules
-The **Cloud Threats module** contains **10 custom rules** designed to detect modern cloud attack behaviors across AWS, Azure, GCP, and Docker. Each rule is mapped to MITRE ATT&CK tactics for impact, persistence, initial access, and discovery, such as T1531 (Account / Resource Impact), T1078 (Valid Accounts), and T1087 (Account Discovery).
+The **Cloud Threats module** contains **15 custom rules** designed to detect modern cloud attack behaviors across AWS, Azure, GCP, and Docker. Each rule is mapped to MITRE ATT&CK tactics for impact, persistence, initial access, and discovery, such as T1531 (Account / Resource Impact), T1078 (Valid Accounts), and T1087 (Account Discovery).
 
 **Highlights of the cloud threat rules include:**
 - Detection of destructive cloud commands, like recursive S3 or GCP bucket deletion.  
@@ -97,7 +97,7 @@ The **Living-Off-the-Land (LOL) module** contains **5 custom rules** designed to
 
 
 ### 4️⃣ Lateral Movement Rules
-The **Lateral Movement module** contains **5 custom rules** designed to detect attackers moving across the network after gaining initial access. Each rule is mapped to MITRE ATT&CK tactics for lateral movement, execution, and discovery, such as T1076 (Remote Desktop Protocol), T1021.002 (SMB/Windows Admin Shares), and T1047 (WMI).
+The **Lateral Movement module** contains **10 custom rules** designed to detect attackers moving across the network after gaining initial access. Each rule is mapped to MITRE ATT&CK tactics for lateral movement, execution, and discovery, such as T1076 (Remote Desktop Protocol), T1021.002 (SMB/Windows Admin Shares), and T1047 (WMI).
 
 **Highlights of the lateral movement rules include:**
 - Detection of suspicious RDP logins from unusual IP addresses.  
