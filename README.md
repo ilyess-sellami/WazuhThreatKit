@@ -2,7 +2,9 @@
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 ![Wazuh](https://img.shields.io/badge/Wazuh-Rules-orange)
 
+# WazuhThreatKit
 
+## Overview
 **WazuhThreatKit** is a SOC-focused project that provides **custom Wazuh rules for detecting modern cyber threats**. It is designed for cybersecurity enthusiasts and **detection engineers** who want to **practice writing, testing, and implementing detection rules** in Wazuh, without needing a full Wazuh deployment.
 
 ---
