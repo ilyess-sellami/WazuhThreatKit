@@ -4,7 +4,7 @@
 
 # WazuhThreatKit
 
-![WazuhThreatKit]
+![WazuhThreatKit](/images/wazuh_threat_kit.png)
 
 ## Overview
 **WazuhThreatKit** is a SOC-focused project that provides **custom Wazuh rules for detecting modern cyber threats**. It is designed for cybersecurity enthusiasts and **detection engineers** who want to **practice writing, testing, and implementing detection rules** in Wazuh, without needing a full Wazuh deployment.
